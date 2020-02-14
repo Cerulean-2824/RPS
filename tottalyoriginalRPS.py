@@ -1,6 +1,8 @@
 import getpass
 import random
 
+print("Oh pretty please don't break the program ok bye\nWelcome to rockington papering scissoring time")
+
 play1 = input("Please enter your name Player A: ")
 play2 = input("Please enter your name Player B: ")
 
