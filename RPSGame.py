@@ -2,10 +2,10 @@ import random
 import RPSmodule as RPS
 
 def OutcomeOne():
-    print(Player1, "Wins!, ","(",Weapon1,")", "vs", "(",Weapon2,")")
+    print(Player1, "Wins!, ", "(", Weapon1, ")", "vs", "(", Weapon2, ")")
 
 def OutcomeTwo():
-    print(Player2, "Wins!, ","(",Weapon2,")", "vs", "(",Weapon1,")")
+    print(Player2, "Wins!, ", "(", Weapon2, ")", "vs", "(", Weapon1, ")")
 
 
 Rounds = int(input("How many rounds would you like to play? :"))
@@ -26,14 +26,13 @@ for i in range(1, Rounds + 1):
         Weapon2 = RPS.WeaponTwo()
     else:
         print(Player2, "has been randomly chosen to start the game")
-        print(Player2, ", please choose your weapon:")
+        print(Player2, "please choose your weapon:")
         print("1 = Rock", "\n2 = Paper", "\n3 = Scissors")
-        Weapon1 = RPS.WeaponOne()
-
+        Weapon2 = RPS.WeaponTwo()
 
         print(Player1, "please choose your weapon:")
         print("1 = Rock", "\n2 = Paper", "\n3 = Scissors")
-        Weapon2 = RPS.WeaponTwo()
+        Weapon1 = RPS.WeaponOne()
 
     if Weapon1 == Weapon2:
         print("Draw!")
